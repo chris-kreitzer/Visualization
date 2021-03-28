@@ -19,6 +19,7 @@
 
 suppressPackageStartupMessages(library(ggplot2))
 suppressPackageStartupMessages(library(grDevices))
+library(sysfonts)
 
 
 #' Import Font to R/RStudio
@@ -55,3 +56,18 @@ ggsave(filename = ..., device = cairo_pdf)
 
 #' for PNG (no support vector graphic) use ''
 ggsave(filename = ..., )
+
+
+#' IMPORT a GoogleFont:
+sysfonts::font_add_google(name = 'Lora', family = 'Lora')
+
+
+
+
+
+
+
+
+
+
+
